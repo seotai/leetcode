@@ -11,7 +11,6 @@ var solve = function(board) {
         dfs(x, y+1)
         dfs(x-1, y)
         dfs(x, y-1)
-        return
     }
     for (let i = 0; i < r; i ++) {
         for (let j = 0; j < c; j ++) {
