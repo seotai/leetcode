@@ -3,13 +3,11 @@
  * @return {boolean}
  */
 var isPalindrome = function(x) {
-    let cnt = 0, reverse = 0, copy = x
-    const y = String(x).length
+    let reverse = 0, copy = x
     while (x > 0) {
         const rest = x % 10
-        reverse += rest * 10 ** (y - cnt - 1)
+        reverse = reverse * 10 + rest
         x = Math.floor(x / 10)
-        cnt += 1
     }
     return copy === reverse
 
